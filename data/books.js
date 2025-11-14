@@ -1,13 +1,10 @@
 // data/books.js
 let books = [
-    { id: 1, title: "Laskar Pelangi", author: "Andrea Hirata", published_year: 2005 },
-    { id: 2, title: "Bumi Manusia", author: "Pramoedya Ananta Toer", published_year: 1980 },
-    { id: 3, title: "Cantik Itu Luka", author: "Eka Kurniawan", published_year: 2002 },
-    { id: 4, title: "Pulang", author: "Leila S. Chudori", published_year: 2012 },
-    { id: 5, title: "Dilan 1990", author: "Pidi Baiq", published_year: 2014 },
-    { id: 6, title: "Anak Semua Bangsa", author: "Pramoedya Ananta Toer", published_year: 1980 },
-    { id: 7, title: "Laut Bercerita", author: "Leila S. Chudori", published_year: 2017 },
-    { id: 8, title: "Filosofi Kopi", author: "Dewi Lestari", published_year: 2006 },
+    { id: 1, title: "Totto-Chan: The Little Girl at the Window", author: "Tetsuko Kuroyanagi", published_year: 1981 },
+    { id: 2, title: "Grave of the Fireflies", author: "Akiyuki Nosaka", published_year: 1967 },
+    { id: 3, title: "Howl's Moving Castle", author: "Diana Wynne Jones", published_year: 1986 },
+    { id: 4, title: "The Borrowers", author: "Mary Norton", published_year: 1952 },
+    { id: 5, title: "Kiki's Delivery Service", author: "Eiko Kadono", published_year: 1985 },
 ];
 
 module.exports = {

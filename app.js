@@ -21,8 +21,10 @@ app.get('/', (req, res) => {
 // [3] Hubungkan router buku ke endpoint utama /books
 app.use('/books', bookRoutes); 
 
-// [4] GLOBAL ERROR HANDLER (4 Argumen: err, req, res, next) - Persyaratan Status 500
-// Diletakkan paling akhir setelah semua rute
+// [4] Sajikan folder 'images' secara statis (Persyaratan Opsional)
+app.use('/images', express.static('images'));
+
+// [5] GLOBAL ERROR HANDLER (4 Argumen: err, req, res, next) -> Persyaratan Status 500
 app.use((err, req, res, next) => {
     console.error(err.stack); // Catat error ke konsol server
     
