@@ -1,7 +1,7 @@
 📚 REST API TOKO BUKU
 
 Tujuan Proyek
-Proyek ini mengimplementasikan RESTful API lengkap untuk mengelola koleksi buku (`/books`) menggunakan Express.js. Semua persyaratan wajib telah diselesaikan, meliputi: CRUD Lengkap, Express Router, Middleware Kustom (Logging dan Validasi), dan Global Error Handling.
+Proyek ini mengimplementasikan REST API lengkap untuk mengelola koleksi buku (`/books`) menggunakan Express.js. Semua persyaratan wajib telah diselesaikan, meliputi: CRUD Lengkap, Express Router, Middleware Kustom (Logging dan Validasi), dan Global Error Handling.
 
 1. Pengujian Fungsionalitas Utama (CRUD)
 Berikut adalah bukti pengujian untuk semua operasi CRUD yang berhasil.
@@ -46,7 +46,7 @@ Membuktikan Global Error Handler (middleware 4 argumen) berfungsi saat server cr
 3. Pengujian Middleware Kustom & Statis
 
 3.1. File Statis (/images)
-Membuktikan `express.static` berfungsi memuat gambar cover buku.
+Membuktikan express.static berfungsi memuat gambar cover buku.
 ![GET File Statis](dokumentasi/GET-IMAGE.jpg)
 
 3.2. Middleware Logger
