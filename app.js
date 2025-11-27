@@ -6,6 +6,7 @@ const PORT = 3000;
 // Import Middleware & Router
 const logger = require('./middleware/logger'); 
 const bookRoutes = require('./routes/bookRoutes'); 
+const authRoutes = require('./routes/authRoutes'); // Sudah diimpor dengan benar
 
 // [1] Pasang Middleware JSON Parser
 app.use(express.json());
@@ -18,13 +19,16 @@ app.get('/', (req, res) => {
     res.send('Welcome to the Book Store REST API');
 });
 
-// [3] Hubungkan router buku ke endpoint utama /books
+// [3] Hubungkan router autentikasi ke endpoint utama /auth (BARU)
+app.use('/auth', authRoutes); // <--- INI TAMBAHANNYA
+
+// [4] Hubungkan router buku ke endpoint utama /books
 app.use('/books', bookRoutes); 
 
-// [4] Sajikan folder 'images' secara statis (Persyaratan Opsional)
+// [5] Sajikan folder 'images' secara statis (Persyaratan Opsional)
 app.use('/images', express.static('images'));
 
-// [5] GLOBAL ERROR HANDLER (4 Argumen: err, req, res, next) -> Persyaratan Status 500
+// [6] GLOBAL ERROR HANDLER (4 Argumen: err, req, res, next) -> Persyaratan Status 500
 app.use((err, req, res, next) => {
     console.error(err.stack); // Catat error ke konsol server
     
